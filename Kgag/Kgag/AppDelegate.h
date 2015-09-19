@@ -12,6 +12,14 @@
 
 @property (strong, nonatomic) UIWindow *window;
 
+@property (nonatomic, strong) UINavigationController *loginNavigationController;
+
++ (AppDelegate *)sharedAppDelegate;
+
+- (void)showHomeViewController;
+- (void)showLoginViewController;
+
+- (void)setApplicationAccount:(NSString *)userName;
 
 @end
 

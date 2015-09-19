@@ -9,11 +9,15 @@
 /* Begin PBXBuildFile section */
 		F7D8CF461BAD398D00228B06 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F7D8CF451BAD398D00228B06 /* main.m */; };
 		F7D8CF491BAD398D00228B06 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F7D8CF481BAD398D00228B06 /* AppDelegate.m */; };
-		F7D8CF4C1BAD398D00228B06 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7D8CF4B1BAD398D00228B06 /* ViewController.m */; };
-		F7D8CF4F1BAD398D00228B06 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7D8CF4D1BAD398D00228B06 /* Main.storyboard */; };
 		F7D8CF511BAD398D00228B06 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7D8CF501BAD398D00228B06 /* Images.xcassets */; };
 		F7D8CF541BAD398D00228B06 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7D8CF521BAD398D00228B06 /* LaunchScreen.xib */; };
 		F7D8CF601BAD398D00228B06 /* KgagTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F7D8CF5F1BAD398D00228B06 /* KgagTests.m */; };
+		F7D8CF6C1BAD3AAB00228B06 /* KGRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7D8CF6A1BAD3AAB00228B06 /* KGRootViewController.m */; };
+		F7D8CF6D1BAD3AAB00228B06 /* KGRootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7D8CF6B1BAD3AAB00228B06 /* KGRootViewController.xib */; };
+		F7D8CF721BAD3D0100228B06 /* KGLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7D8CF701BAD3D0100228B06 /* KGLoginViewController.m */; };
+		F7D8CF731BAD3D0100228B06 /* KGLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7D8CF711BAD3D0100228B06 /* KGLoginViewController.xib */; };
+		F7D8CF771BAD3D0F00228B06 /* KGRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7D8CF751BAD3D0F00228B06 /* KGRegisterViewController.m */; };
+		F7D8CF781BAD3D0F00228B06 /* KGRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7D8CF761BAD3D0F00228B06 /* KGRegisterViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +36,20 @@
 		F7D8CF451BAD398D00228B06 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F7D8CF471BAD398D00228B06 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F7D8CF481BAD398D00228B06 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F7D8CF4A1BAD398D00228B06 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F7D8CF4B1BAD398D00228B06 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		F7D8CF4E1BAD398D00228B06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F7D8CF501BAD398D00228B06 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F7D8CF531BAD398D00228B06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		F7D8CF591BAD398D00228B06 /* KgagTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KgagTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7D8CF5E1BAD398D00228B06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F7D8CF5F1BAD398D00228B06 /* KgagTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KgagTests.m; sourceTree = "<group>"; };
+		F7D8CF691BAD3AAB00228B06 /* KGRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGRootViewController.h; sourceTree = "<group>"; };
+		F7D8CF6A1BAD3AAB00228B06 /* KGRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGRootViewController.m; sourceTree = "<group>"; };
+		F7D8CF6B1BAD3AAB00228B06 /* KGRootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KGRootViewController.xib; sourceTree = "<group>"; };
+		F7D8CF6F1BAD3D0100228B06 /* KGLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGLoginViewController.h; sourceTree = "<group>"; };
+		F7D8CF701BAD3D0100228B06 /* KGLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGLoginViewController.m; sourceTree = "<group>"; };
+		F7D8CF711BAD3D0100228B06 /* KGLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KGLoginViewController.xib; sourceTree = "<group>"; };
+		F7D8CF741BAD3D0F00228B06 /* KGRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGRegisterViewController.h; sourceTree = "<group>"; };
+		F7D8CF751BAD3D0F00228B06 /* KGRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGRegisterViewController.m; sourceTree = "<group>"; };
+		F7D8CF761BAD3D0F00228B06 /* KGRegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KGRegisterViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,14 +91,15 @@
 		F7D8CF421BAD398D00228B06 /* Kgag */ = {
 			isa = PBXGroup;
 			children = (
+				F7D8CF6E1BAD3CE400228B06 /* Regsiter */,
 				F7D8CF471BAD398D00228B06 /* AppDelegate.h */,
 				F7D8CF481BAD398D00228B06 /* AppDelegate.m */,
-				F7D8CF4A1BAD398D00228B06 /* ViewController.h */,
-				F7D8CF4B1BAD398D00228B06 /* ViewController.m */,
-				F7D8CF4D1BAD398D00228B06 /* Main.storyboard */,
 				F7D8CF501BAD398D00228B06 /* Images.xcassets */,
 				F7D8CF521BAD398D00228B06 /* LaunchScreen.xib */,
 				F7D8CF431BAD398D00228B06 /* Supporting Files */,
+				F7D8CF691BAD3AAB00228B06 /* KGRootViewController.h */,
+				F7D8CF6A1BAD3AAB00228B06 /* KGRootViewController.m */,
+				F7D8CF6B1BAD3AAB00228B06 /* KGRootViewController.xib */,
 			);
 			path = Kgag;
 			sourceTree = "<group>";
@@ -117,6 +128,19 @@
 				F7D8CF5E1BAD398D00228B06 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F7D8CF6E1BAD3CE400228B06 /* Regsiter */ = {
+			isa = PBXGroup;
+			children = (
+				F7D8CF6F1BAD3D0100228B06 /* KGLoginViewController.h */,
+				F7D8CF701BAD3D0100228B06 /* KGLoginViewController.m */,
+				F7D8CF711BAD3D0100228B06 /* KGLoginViewController.xib */,
+				F7D8CF741BAD3D0F00228B06 /* KGRegisterViewController.h */,
+				F7D8CF751BAD3D0F00228B06 /* KGRegisterViewController.m */,
+				F7D8CF761BAD3D0F00228B06 /* KGRegisterViewController.xib */,
+			);
+			name = Regsiter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,9 +223,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7D8CF4F1BAD398D00228B06 /* Main.storyboard in Resources */,
+				F7D8CF731BAD3D0100228B06 /* KGLoginViewController.xib in Resources */,
 				F7D8CF541BAD398D00228B06 /* LaunchScreen.xib in Resources */,
 				F7D8CF511BAD398D00228B06 /* Images.xcassets in Resources */,
+				F7D8CF781BAD3D0F00228B06 /* KGRegisterViewController.xib in Resources */,
+				F7D8CF6D1BAD3AAB00228B06 /* KGRootViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,7 +245,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7D8CF4C1BAD398D00228B06 /* ViewController.m in Sources */,
+				F7D8CF721BAD3D0100228B06 /* KGLoginViewController.m in Sources */,
+				F7D8CF771BAD3D0F00228B06 /* KGRegisterViewController.m in Sources */,
+				F7D8CF6C1BAD3AAB00228B06 /* KGRootViewController.m in Sources */,
 				F7D8CF491BAD398D00228B06 /* AppDelegate.m in Sources */,
 				F7D8CF461BAD398D00228B06 /* main.m in Sources */,
 			);
@@ -244,14 +272,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F7D8CF4D1BAD398D00228B06 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F7D8CF4E1BAD398D00228B06 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F7D8CF521BAD398D00228B06 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (

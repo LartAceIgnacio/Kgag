@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  KGLoginViewController.h
 //  Kgag
 //
 //  Created by Lart Ace Ignacio on 9/19/15.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface KGLoginViewController : UIViewController
 
 @end
-
