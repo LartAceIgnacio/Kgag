@@ -9,6 +9,7 @@
 #import "KGLoginViewController.h"
 #import "KGRegisterViewController.h"
 #import "AppDelegate.h"
+#import "KGUserRequestManager.h"
 
 @interface KGLoginViewController ()
 
@@ -34,14 +35,45 @@
 #pragma mark - IBActions
 - (IBAction)loginButtonAction:(id)sender
 {
-    [[AppDelegate sharedAppDelegate] setApplicationAccount:self.userNameTextField.text];
-    [[AppDelegate sharedAppDelegate] showHomeViewController];
+    if (self.userNameTextField.text.length > 0)
+        [self requestUserDetailsWith:self.userNameTextField.text];
 }
 
 - (IBAction)registerButtonAction:(id)sender
 {
     KGRegisterViewController *registerViewController = [[KGRegisterViewController alloc] init];
     [self.navigationController pushViewController:registerViewController animated:YES];
+}
+
+#pragma mark - API Request
+- (void)requestUserDetailsWith:(NSString *)userName
+{
+    RequestFinishedBlock requestFinishedBlock = ^(NSDictionary *params) {
+        
+        NSDictionary *userDictionary = [[params objectForKey:@"data"] objectForKey:@"User"];
+        
+        if ([userDictionary count] > 0) {
+            [[AppDelegate sharedAppDelegate] setApplicationAccount:[userDictionary objectForKey:@"username"]];
+            [[AppDelegate sharedAppDelegate] showHomeViewController];
+        } else {
+            NSLog(@"No user found");
+        }
+    };
+    
+    RequestErrorBlock errorBlock = ^(NSError *error, NSDictionary *params) {
+        
+    };
+    
+    RequestCancelBlock cancelBlock = ^(void) {
+        
+    };
+    
+    KGUserRequestManager *userManager = [[KGUserRequestManager alloc] init];
+    
+    [userManager requestUserDetails:userName
+                      finishedBlock:requestFinishedBlock
+                         errorBlock:errorBlock
+                        cancelBlock:cancelBlock];
 }
 
 /*

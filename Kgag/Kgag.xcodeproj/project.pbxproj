@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		413549867FDC0B5D0A3D6C5A /* libPods-Kgag.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A3130EFA9B82415BDBBC2A34 /* libPods-Kgag.a */; };
+		846B96781BB9178100304088 /* KGURLConnectManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 846B96771BB9178100304088 /* KGURLConnectManager.m */; };
+		846B967B1BB929EB00304088 /* KGUserRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 846B967A1BB929EB00304088 /* KGUserRequestManager.m */; };
+		846B967E1BB92A1800304088 /* KGAPIRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 846B967D1BB92A1800304088 /* KGAPIRequestManager.m */; };
 		F7D8CF461BAD398D00228B06 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F7D8CF451BAD398D00228B06 /* main.m */; };
 		F7D8CF491BAD398D00228B06 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F7D8CF481BAD398D00228B06 /* AppDelegate.m */; };
 		F7D8CF511BAD398D00228B06 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7D8CF501BAD398D00228B06 /* Images.xcassets */; };
@@ -31,7 +35,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1B3888681E75519C89AD0399 /* Pods-Kgag.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kgag.release.xcconfig"; path = "Pods/Target Support Files/Pods-Kgag/Pods-Kgag.release.xcconfig"; sourceTree = "<group>"; };
 		846B96741BB9150200304088 /* KGURLPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGURLPath.h; sourceTree = "<group>"; };
+		846B96761BB9178100304088 /* KGURLConnectManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGURLConnectManager.h; sourceTree = "<group>"; };
+		846B96771BB9178100304088 /* KGURLConnectManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGURLConnectManager.m; sourceTree = "<group>"; };
+		846B96791BB929EB00304088 /* KGUserRequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGUserRequestManager.h; sourceTree = "<group>"; };
+		846B967A1BB929EB00304088 /* KGUserRequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGUserRequestManager.m; sourceTree = "<group>"; };
+		846B967C1BB92A1800304088 /* KGAPIRequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGAPIRequestManager.h; sourceTree = "<group>"; };
+		846B967D1BB92A1800304088 /* KGAPIRequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGAPIRequestManager.m; sourceTree = "<group>"; };
+		A3130EFA9B82415BDBBC2A34 /* libPods-Kgag.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Kgag.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB9B46BB958CC2D279DAF2CE /* Pods-Kgag.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kgag.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kgag/Pods-Kgag.debug.xcconfig"; sourceTree = "<group>"; };
 		F7D8CF401BAD398D00228B06 /* Kgag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kgag.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7D8CF441BAD398D00228B06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F7D8CF451BAD398D00228B06 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -58,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				413549867FDC0B5D0A3D6C5A /* libPods-Kgag.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +88,7 @@
 		846B96751BB915BF00304088 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				846B967F1BB92B6C00304088 /* BaseRequestManager */,
 				846B96741BB9150200304088 /* KGURLPath.h */,
 				F7D8CF6E1BAD3CE400228B06 /* Register */,
 				F7D8CF471BAD398D00228B06 /* AppDelegate.h */,
@@ -81,8 +96,38 @@
 				F7D8CF691BAD3AAB00228B06 /* KGRootViewController.h */,
 				F7D8CF6A1BAD3AAB00228B06 /* KGRootViewController.m */,
 				F7D8CF6B1BAD3AAB00228B06 /* KGRootViewController.xib */,
+				846B96791BB929EB00304088 /* KGUserRequestManager.h */,
+				846B967A1BB929EB00304088 /* KGUserRequestManager.m */,
 			);
 			name = Class;
+			sourceTree = "<group>";
+		};
+		846B967F1BB92B6C00304088 /* BaseRequestManager */ = {
+			isa = PBXGroup;
+			children = (
+				846B96761BB9178100304088 /* KGURLConnectManager.h */,
+				846B96771BB9178100304088 /* KGURLConnectManager.m */,
+				846B967C1BB92A1800304088 /* KGAPIRequestManager.h */,
+				846B967D1BB92A1800304088 /* KGAPIRequestManager.m */,
+			);
+			name = BaseRequestManager;
+			sourceTree = "<group>";
+		};
+		8D3178A74BC027C8605D4BF9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EB9B46BB958CC2D279DAF2CE /* Pods-Kgag.debug.xcconfig */,
+				1B3888681E75519C89AD0399 /* Pods-Kgag.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9699F8E05DA6C4BCAFAE5160 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A3130EFA9B82415BDBBC2A34 /* libPods-Kgag.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		F7D8CF371BAD398C00228B06 = {
@@ -91,6 +136,8 @@
 				F7D8CF421BAD398D00228B06 /* Kgag */,
 				F7D8CF5C1BAD398D00228B06 /* KgagTests */,
 				F7D8CF411BAD398D00228B06 /* Products */,
+				8D3178A74BC027C8605D4BF9 /* Pods */,
+				9699F8E05DA6C4BCAFAE5160 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -160,9 +207,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F7D8CF631BAD398D00228B06 /* Build configuration list for PBXNativeTarget "Kgag" */;
 			buildPhases = (
+				06EE3469D7C044BB41BB8816 /* Check Pods Manifest.lock */,
 				F7D8CF3C1BAD398C00228B06 /* Sources */,
 				F7D8CF3D1BAD398C00228B06 /* Frameworks */,
 				F7D8CF3E1BAD398C00228B06 /* Resources */,
+				858C47582EE9C2D656EE4CAF /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -250,16 +299,52 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		06EE3469D7C044BB41BB8816 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		858C47582EE9C2D656EE4CAF /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Kgag/Pods-Kgag-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F7D8CF3C1BAD398C00228B06 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				846B967E1BB92A1800304088 /* KGAPIRequestManager.m in Sources */,
 				F7D8CF721BAD3D0100228B06 /* KGLoginViewController.m in Sources */,
 				F7D8CF771BAD3D0F00228B06 /* KGRegisterViewController.m in Sources */,
 				F7D8CF6C1BAD3AAB00228B06 /* KGRootViewController.m in Sources */,
 				F7D8CF491BAD398D00228B06 /* AppDelegate.m in Sources */,
+				846B96781BB9178100304088 /* KGURLConnectManager.m in Sources */,
 				F7D8CF461BAD398D00228B06 /* main.m in Sources */,
+				846B967B1BB929EB00304088 /* KGUserRequestManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,6 +460,7 @@
 		};
 		F7D8CF641BAD398D00228B06 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB9B46BB958CC2D279DAF2CE /* Pods-Kgag.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Kgag/Info.plist;
@@ -385,6 +471,7 @@
 		};
 		F7D8CF651BAD398D00228B06 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B3888681E75519C89AD0399 /* Pods-Kgag.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Kgag/Info.plist;

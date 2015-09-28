@@ -25,7 +25,6 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
-    
     if ([self hasAccount])
     {
         KGRootViewController *rootViewController = [[KGRootViewController alloc] init];
