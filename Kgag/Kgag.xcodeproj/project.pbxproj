@@ -31,6 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		846B96741BB9150200304088 /* KGURLPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGURLPath.h; sourceTree = "<group>"; };
 		F7D8CF401BAD398D00228B06 /* Kgag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kgag.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7D8CF441BAD398D00228B06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F7D8CF451BAD398D00228B06 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -70,6 +71,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		846B96751BB915BF00304088 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				846B96741BB9150200304088 /* KGURLPath.h */,
+				F7D8CF6E1BAD3CE400228B06 /* Register */,
+				F7D8CF471BAD398D00228B06 /* AppDelegate.h */,
+				F7D8CF481BAD398D00228B06 /* AppDelegate.m */,
+				F7D8CF691BAD3AAB00228B06 /* KGRootViewController.h */,
+				F7D8CF6A1BAD3AAB00228B06 /* KGRootViewController.m */,
+				F7D8CF6B1BAD3AAB00228B06 /* KGRootViewController.xib */,
+			);
+			name = Class;
+			sourceTree = "<group>";
+		};
 		F7D8CF371BAD398C00228B06 = {
 			isa = PBXGroup;
 			children = (
@@ -91,15 +106,10 @@
 		F7D8CF421BAD398D00228B06 /* Kgag */ = {
 			isa = PBXGroup;
 			children = (
-				F7D8CF6E1BAD3CE400228B06 /* Regsiter */,
-				F7D8CF471BAD398D00228B06 /* AppDelegate.h */,
-				F7D8CF481BAD398D00228B06 /* AppDelegate.m */,
+				846B96751BB915BF00304088 /* Class */,
 				F7D8CF501BAD398D00228B06 /* Images.xcassets */,
 				F7D8CF521BAD398D00228B06 /* LaunchScreen.xib */,
 				F7D8CF431BAD398D00228B06 /* Supporting Files */,
-				F7D8CF691BAD3AAB00228B06 /* KGRootViewController.h */,
-				F7D8CF6A1BAD3AAB00228B06 /* KGRootViewController.m */,
-				F7D8CF6B1BAD3AAB00228B06 /* KGRootViewController.xib */,
 			);
 			path = Kgag;
 			sourceTree = "<group>";
@@ -130,7 +140,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		F7D8CF6E1BAD3CE400228B06 /* Regsiter */ = {
+		F7D8CF6E1BAD3CE400228B06 /* Register */ = {
 			isa = PBXGroup;
 			children = (
 				F7D8CF6F1BAD3D0100228B06 /* KGLoginViewController.h */,
@@ -140,7 +150,7 @@
 				F7D8CF751BAD3D0F00228B06 /* KGRegisterViewController.m */,
 				F7D8CF761BAD3D0F00228B06 /* KGRegisterViewController.xib */,
 			);
-			name = Regsiter;
+			name = Register;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -436,6 +446,7 @@
 				F7D8CF651BAD398D00228B06 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F7D8CF661BAD398D00228B06 /* Build configuration list for PBXNativeTarget "KgagTests" */ = {
 			isa = XCConfigurationList;
@@ -444,6 +455,7 @@
 				F7D8CF681BAD398D00228B06 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
