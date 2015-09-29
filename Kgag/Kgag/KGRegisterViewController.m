@@ -8,8 +8,14 @@
 
 #import "KGRegisterViewController.h"
 #import "AppDelegate.h"
+#import "KGUserRequestManager.h"
+#import "KGUser.h"
 
 @interface KGRegisterViewController ()
+@property (strong, nonatomic) IBOutlet UITextField *userNameTextField;
+@property (strong, nonatomic) IBOutlet UITextField *passwordTextField;
+@property (strong, nonatomic) IBOutlet UITextField *firstNameTextField;
+@property (strong, nonatomic) IBOutlet UITextField *lastNameTextField;
 
 @end
 
@@ -33,8 +39,37 @@
 
 - (IBAction)registerButtonAction:(id)sender
 {
-    [[AppDelegate sharedAppDelegate] setApplicationAccount:@"Lart"];
-    [[AppDelegate sharedAppDelegate] showHomeViewController];
+    [self requestRegisterUser];
+}
+
+#pragma mark - IBActions
+- (void)requestRegisterUser
+{
+    RequestFinishedBlock finishedBlock = ^(NSDictionary *params) {
+        [[AppDelegate sharedAppDelegate] setApplicationAccount:@"Lart"];
+        [[AppDelegate sharedAppDelegate] showHomeViewController];
+    };
+    
+    RequestErrorBlock errorBlock = ^(NSError *error, NSDictionary *params) {
+        
+    };
+    
+    RequestCancelBlock cancelBlock = ^(void) {
+        
+    };
+    
+    KGUserRequestManager *userManager = [[KGUserRequestManager alloc] init];
+    
+    KGUser *user = [[KGUser alloc] init];
+    user.userName = self.userNameTextField.text;
+    user.password = self.passwordTextField.text;
+    user.firstName = self.firstNameTextField.text;
+    user.lastName = self.lastNameTextField.text;
+    
+    [userManager requestAddUser:user
+                  finishedBlock:finishedBlock
+                     errorBlock:errorBlock
+                    cancelBlock:cancelBlock];
 }
 
 /*

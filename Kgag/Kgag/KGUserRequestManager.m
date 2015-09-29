@@ -53,4 +53,29 @@
                     cancelBlock:cancelBlock];
 }
 
+- (void)requestAddUser:(KGUser *)user
+         finishedBlock:(RequestFinishedBlock)finishedBlock
+            errorBlock:(RequestErrorBlock)errorBlock
+           cancelBlock:(RequestCancelBlock)cancelBlock
+{
+    RequestFinishedBlock requestFinishedBlock = ^(NSDictionary *params) {
+        finishedBlock(params);
+    };
+    
+    NSDictionary *userDictionary = [NSDictionary dictionaryWithObjectsAndKeys:
+                                    user.userName, @"username",
+                                    user.password, @"password",
+                                    user.firstName, @"first_name",
+                                    user.lastName, @"last_name", nil];
+    
+    NSDictionary *requestParams = [NSDictionary dictionaryWithObject:userDictionary forKey:@"User"];
+    
+    [self apiPostRequestWithURL:urlAddUser
+                  requestParams:requestParams
+                     requestTag:0
+                  finishedBlock:requestFinishedBlock
+                     errorBlock:errorBlock
+                    cancelBlock:cancelBlock];
+}
+
 @end

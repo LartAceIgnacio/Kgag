@@ -11,6 +11,7 @@
 		846B96781BB9178100304088 /* KGURLConnectManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 846B96771BB9178100304088 /* KGURLConnectManager.m */; };
 		846B967B1BB929EB00304088 /* KGUserRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 846B967A1BB929EB00304088 /* KGUserRequestManager.m */; };
 		846B967E1BB92A1800304088 /* KGAPIRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 846B967D1BB92A1800304088 /* KGAPIRequestManager.m */; };
+		846BAD551BBA5A40005ADECE /* KGUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 846BAD541BBA5A40005ADECE /* KGUser.m */; };
 		F7D8CF461BAD398D00228B06 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F7D8CF451BAD398D00228B06 /* main.m */; };
 		F7D8CF491BAD398D00228B06 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F7D8CF481BAD398D00228B06 /* AppDelegate.m */; };
 		F7D8CF511BAD398D00228B06 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7D8CF501BAD398D00228B06 /* Images.xcassets */; };
@@ -43,6 +44,10 @@
 		846B967A1BB929EB00304088 /* KGUserRequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGUserRequestManager.m; sourceTree = "<group>"; };
 		846B967C1BB92A1800304088 /* KGAPIRequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGAPIRequestManager.h; sourceTree = "<group>"; };
 		846B967D1BB92A1800304088 /* KGAPIRequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGAPIRequestManager.m; sourceTree = "<group>"; };
+		846BAD531BBA5A40005ADECE /* KGUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGUser.h; sourceTree = "<group>"; };
+		846BAD541BBA5A40005ADECE /* KGUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGUser.m; sourceTree = "<group>"; };
+		846BAD571BBA61B2005ADECE /* KGObjectKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGObjectKeys.h; sourceTree = "<group>"; };
+		846BAD581BBA627B005ADECE /* KGPrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGPrefixHeader.pch; sourceTree = "<group>"; };
 		A3130EFA9B82415BDBBC2A34 /* libPods-Kgag.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Kgag.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB9B46BB958CC2D279DAF2CE /* Pods-Kgag.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kgag.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kgag/Pods-Kgag.debug.xcconfig"; sourceTree = "<group>"; };
 		F7D8CF401BAD398D00228B06 /* Kgag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kgag.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,6 +93,9 @@
 		846B96751BB915BF00304088 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				846BAD561BBA6192005ADECE /* Utilities */,
+				846BAD521BBA5A0E005ADECE /* Managers */,
+				846BAD511BBA5A06005ADECE /* Models */,
 				846B967F1BB92B6C00304088 /* BaseRequestManager */,
 				846B96741BB9150200304088 /* KGURLPath.h */,
 				F7D8CF6E1BAD3CE400228B06 /* Register */,
@@ -96,8 +104,7 @@
 				F7D8CF691BAD3AAB00228B06 /* KGRootViewController.h */,
 				F7D8CF6A1BAD3AAB00228B06 /* KGRootViewController.m */,
 				F7D8CF6B1BAD3AAB00228B06 /* KGRootViewController.xib */,
-				846B96791BB929EB00304088 /* KGUserRequestManager.h */,
-				846B967A1BB929EB00304088 /* KGUserRequestManager.m */,
+				846BAD581BBA627B005ADECE /* KGPrefixHeader.pch */,
 			);
 			name = Class;
 			sourceTree = "<group>";
@@ -111,6 +118,32 @@
 				846B967D1BB92A1800304088 /* KGAPIRequestManager.m */,
 			);
 			name = BaseRequestManager;
+			sourceTree = "<group>";
+		};
+		846BAD511BBA5A06005ADECE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				846BAD531BBA5A40005ADECE /* KGUser.h */,
+				846BAD541BBA5A40005ADECE /* KGUser.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		846BAD521BBA5A0E005ADECE /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				846B96791BB929EB00304088 /* KGUserRequestManager.h */,
+				846B967A1BB929EB00304088 /* KGUserRequestManager.m */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
+		846BAD561BBA6192005ADECE /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				846BAD571BBA61B2005ADECE /* KGObjectKeys.h */,
+			);
+			name = Utilities;
 			sourceTree = "<group>";
 		};
 		8D3178A74BC027C8605D4BF9 /* Pods */ = {
@@ -344,6 +377,7 @@
 				F7D8CF491BAD398D00228B06 /* AppDelegate.m in Sources */,
 				846B96781BB9178100304088 /* KGURLConnectManager.m in Sources */,
 				F7D8CF461BAD398D00228B06 /* main.m in Sources */,
+				846BAD551BBA5A40005ADECE /* KGUser.m in Sources */,
 				846B967B1BB929EB00304088 /* KGUserRequestManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -463,6 +497,8 @@
 			baseConfigurationReference = EB9B46BB958CC2D279DAF2CE /* Pods-Kgag.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Kgag/KGPrefixHeader.pch;
 				INFOPLIST_FILE = Kgag/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -474,6 +510,8 @@
 			baseConfigurationReference = 1B3888681E75519C89AD0399 /* Pods-Kgag.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Kgag/KGPrefixHeader.pch;
 				INFOPLIST_FILE = Kgag/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "KGAPIRequestManager.h"
 #import "KGURLPath.h"
+#import "KGUser.h"
 
 @interface KGUserRequestManager : KGAPIRequestManager
 
@@ -22,5 +23,10 @@
                    finishedBlock:(RequestFinishedBlock)finishedBlock
                       errorBlock:(RequestErrorBlock)errorBlock
                      cancelBlock:(RequestCancelBlock)cancelBlock;
+
+- (void)requestAddUser:(KGUser *)user
+         finishedBlock:(RequestFinishedBlock)finishedBlock
+            errorBlock:(RequestErrorBlock)errorBlock
+           cancelBlock:(RequestCancelBlock)cancelBlock;
 
 @end
