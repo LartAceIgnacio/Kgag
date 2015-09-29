@@ -11,3 +11,4 @@
 //URL Path
 #define urlViewUser                       @"user/view/%@"
 #define urlAddUser                        @"user/add"
+#define urlVerifyUser                     @"user/verify"

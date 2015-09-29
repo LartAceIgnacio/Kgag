@@ -17,4 +17,10 @@
                 errorBlock:(RequestErrorBlock)errorBlock
                cancelBlock:(RequestCancelBlock)cancelBlock;
 
+- (void)requestVerifyCredentials:(NSString *)userName
+                        password:(NSString *)password
+                   finishedBlock:(RequestFinishedBlock)finishedBlock
+                      errorBlock:(RequestErrorBlock)errorBlock
+                     cancelBlock:(RequestCancelBlock)cancelBlock;
+
 @end

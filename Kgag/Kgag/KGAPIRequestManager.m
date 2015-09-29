@@ -19,13 +19,31 @@
 {
     [[KGURLConnectManager sharedManager] apiGetRequestWithURLPath:urlString
                                                        parameters:requestParams
-     finishedBlock:^(NSDictionary *params) {
-         finishedBlock(params);
-     } errorBlock:^(NSError *error, NSDictionary *params) {
-         
-     } cancelBlock:^{
-         
-     }];
+                                                    finishedBlock:^(NSDictionary *params) {
+                                                        finishedBlock(params);
+                                                    } errorBlock:^(NSError *error, NSDictionary *params) {
+                                                        
+                                                    } cancelBlock:^{
+                                                        
+                                                    }];
+}
+
+- (void)apiPostRequestWithURL:(NSString *)urlString
+                requestParams:(NSDictionary *)requestParams
+                   requestTag:(NSInteger)tag
+                finishedBlock:(RequestFinishedBlock)finishedBlock
+                   errorBlock:(RequestErrorBlock)errorBlock
+                  cancelBlock:(RequestCancelBlock)cancelBlock
+{
+    [[KGURLConnectManager sharedManager] apiPostRequestWithURLPath:urlString
+                                                        parameters:requestParams
+                                                     finishedBlock:^(NSDictionary *params) {
+                                                         finishedBlock(params);
+                                                     } errorBlock:^(NSError *error, NSDictionary *params) {
+                                                         
+                                                     } cancelBlock:^{
+                                                         
+                                                     }];
 }
 
 @end

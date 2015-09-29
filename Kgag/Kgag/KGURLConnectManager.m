@@ -57,6 +57,34 @@ static KGURLConnectManager* sharedManager = nil;
     }];
 }
 
+- (void)apiPostRequestWithURLPath:(NSString *)urlPath
+                       parameters:(NSDictionary *)parameters
+                    finishedBlock:(RequestFinishedBlock)finishedBlock
+                       errorBlock:(RequestErrorBlock)errorBlock
+                      cancelBlock:(RequestCancelBlock)cancelBlock
+{
+    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    manager.requestSerializer = [AFJSONRequestSerializer serializer];
+    
+    NSString *serverURL = urlMainPath;
+    NSString *urlString = [NSString stringWithFormat:@"%@%@", serverURL, urlPath];
+    
+    NSLog(@"URL : %@", urlString);
+    NSLog(@"Parameters : %@", parameters);
+    
+    [manager POST:urlString
+       parameters:parameters
+          success:^(AFHTTPRequestOperation *operation, id responseObject) {
+              NSLog(@"STATUS CODE: %ld", (long)operation.response.statusCode);
+              NSLog(@"Return: %@", responseObject);
+              
+              finishedBlock(responseObject);
+          } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+              NSLog(@"Operation : %@", operation.userInfo);
+              NSLog(@"Error: %@", error);
+          }];
+}
+
 #pragma mark - Utility Methods
 - (NSString *)getRequestParameters:(NSDictionary *)parameters
 {

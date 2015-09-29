@@ -29,4 +29,28 @@
                 cancelBlock:cancelBlock];
 }
 
+- (void)requestVerifyCredentials:(NSString *)userName
+                        password:(NSString *)password
+                   finishedBlock:(RequestFinishedBlock)finishedBlock
+                      errorBlock:(RequestErrorBlock)errorBlock
+                     cancelBlock:(RequestCancelBlock)cancelBlock
+{
+    RequestFinishedBlock requestFinishedBlock = ^(NSDictionary *params) {
+        finishedBlock(params);
+    };
+    
+    NSDictionary *userParameters = [NSDictionary dictionaryWithObjectsAndKeys:
+                                    userName, @"username",
+                                    password, @"password", nil];
+    
+    NSDictionary *requestParameteres = [NSDictionary dictionaryWithObject:userParameters forKey:@"User"];
+    
+    [self apiPostRequestWithURL:urlVerifyUser
+                  requestParams:requestParameteres
+                     requestTag:0
+                  finishedBlock:requestFinishedBlock
+                     errorBlock:errorBlock
+                    cancelBlock:cancelBlock];
+}
+
 @end

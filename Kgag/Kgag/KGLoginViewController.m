@@ -35,8 +35,8 @@
 #pragma mark - IBActions
 - (IBAction)loginButtonAction:(id)sender
 {
-    if (self.userNameTextField.text.length > 0)
-        [self requestUserDetailsWith:self.userNameTextField.text];
+    if (self.userNameTextField.text.length > 0 && self.passwordTextField.text.length > 0)
+        [self requestUserCredentials];
 }
 
 - (IBAction)registerButtonAction:(id)sender
@@ -46,17 +46,19 @@
 }
 
 #pragma mark - API Request
-- (void)requestUserDetailsWith:(NSString *)userName
+- (void)requestUserCredentials
 {
     RequestFinishedBlock requestFinishedBlock = ^(NSDictionary *params) {
         
-        NSDictionary *userDictionary = [[params objectForKey:@"data"] objectForKey:@"User"];
+        NSDictionary *dataDictionary = [params objectForKey:@"data"];
+        NSDictionary *userDictionary = [dataDictionary objectForKey:@"User"];
+        BOOL isValid = [[dataDictionary objectForKey:@"is_credentials_valid"] boolValue];
         
-        if ([userDictionary count] > 0) {
+        if (isValid) {
             [[AppDelegate sharedAppDelegate] setApplicationAccount:[userDictionary objectForKey:@"username"]];
             [[AppDelegate sharedAppDelegate] showHomeViewController];
         } else {
-            NSLog(@"No user found");
+            NSLog(@"Login Failed");
         }
     };
     
@@ -69,21 +71,12 @@
     };
     
     KGUserRequestManager *userManager = [[KGUserRequestManager alloc] init];
-    
-    [userManager requestUserDetails:userName
-                      finishedBlock:requestFinishedBlock
-                         errorBlock:errorBlock
-                        cancelBlock:cancelBlock];
-}
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    [userManager requestVerifyCredentials:self.userNameTextField.text
+                                 password:self.passwordTextField.text
+                            finishedBlock:requestFinishedBlock
+                               errorBlock:errorBlock
+                              cancelBlock:cancelBlock];
 }
-*/
 
 @end

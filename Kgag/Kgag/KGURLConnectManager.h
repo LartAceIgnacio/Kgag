@@ -22,4 +22,10 @@ typedef void (^RequestCancelBlock)(void);
                       errorBlock:(RequestErrorBlock)errorBlock
                      cancelBlock:(RequestCancelBlock)cancelBlock;
 
+- (void)apiPostRequestWithURLPath:(NSString *)urlPath
+                       parameters:(NSDictionary *)parameters
+                    finishedBlock:(RequestFinishedBlock)finishedBlock
+                       errorBlock:(RequestErrorBlock)errorBlock
+                      cancelBlock:(RequestCancelBlock)cancelBlock;
+
 @end

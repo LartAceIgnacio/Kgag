@@ -18,4 +18,11 @@
                errorBlock:(RequestErrorBlock)errorBlock
               cancelBlock:(RequestCancelBlock)cancelBlock;
 
+- (void)apiPostRequestWithURL:(NSString *)urlString
+                requestParams:(NSDictionary *)requestParams
+                   requestTag:(NSInteger)tag
+                finishedBlock:(RequestFinishedBlock)finishedBlock
+                   errorBlock:(RequestErrorBlock)errorBlock
+                  cancelBlock:(RequestCancelBlock)cancelBlock;
+
 @end
