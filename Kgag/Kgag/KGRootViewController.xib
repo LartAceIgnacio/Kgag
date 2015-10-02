@@ -32,7 +32,7 @@
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
-                        <action selector="tabBarViewButton:" destination="-1" eventType="touchUpInside" id="LBe-eo-WOb"/>
+                        <action selector="tabBarAnimationButtonAction:" destination="-1" eventType="touchUpInside" id="3AX-W9-Sx4"/>
                     </connections>
                 </button>
                 <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hQd-T0-fDU">

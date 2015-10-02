@@ -12,6 +12,7 @@
 		846B967B1BB929EB00304088 /* KGUserRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 846B967A1BB929EB00304088 /* KGUserRequestManager.m */; };
 		846B967E1BB92A1800304088 /* KGAPIRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 846B967D1BB92A1800304088 /* KGAPIRequestManager.m */; };
 		846BAD551BBA5A40005ADECE /* KGUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 846BAD541BBA5A40005ADECE /* KGUser.m */; };
+		84CA75F61BBE7995001737A9 /* KGRootViewController+TabBarTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CA75F51BBE7995001737A9 /* KGRootViewController+TabBarTransition.m */; };
 		F7D8CF461BAD398D00228B06 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F7D8CF451BAD398D00228B06 /* main.m */; };
 		F7D8CF491BAD398D00228B06 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F7D8CF481BAD398D00228B06 /* AppDelegate.m */; };
 		F7D8CF511BAD398D00228B06 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7D8CF501BAD398D00228B06 /* Images.xcassets */; };
@@ -48,6 +49,8 @@
 		846BAD541BBA5A40005ADECE /* KGUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGUser.m; sourceTree = "<group>"; };
 		846BAD571BBA61B2005ADECE /* KGObjectKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGObjectKeys.h; sourceTree = "<group>"; };
 		846BAD581BBA627B005ADECE /* KGPrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGPrefixHeader.pch; sourceTree = "<group>"; };
+		84CA75F41BBE7995001737A9 /* KGRootViewController+TabBarTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KGRootViewController+TabBarTransition.h"; sourceTree = "<group>"; };
+		84CA75F51BBE7995001737A9 /* KGRootViewController+TabBarTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KGRootViewController+TabBarTransition.m"; sourceTree = "<group>"; };
 		A3130EFA9B82415BDBBC2A34 /* libPods-Kgag.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Kgag.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB9B46BB958CC2D279DAF2CE /* Pods-Kgag.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kgag.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kgag/Pods-Kgag.debug.xcconfig"; sourceTree = "<group>"; };
 		F7D8CF401BAD398D00228B06 /* Kgag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kgag.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,6 +108,8 @@
 				F7D8CF6A1BAD3AAB00228B06 /* KGRootViewController.m */,
 				F7D8CF6B1BAD3AAB00228B06 /* KGRootViewController.xib */,
 				846BAD581BBA627B005ADECE /* KGPrefixHeader.pch */,
+				84CA75F41BBE7995001737A9 /* KGRootViewController+TabBarTransition.h */,
+				84CA75F51BBE7995001737A9 /* KGRootViewController+TabBarTransition.m */,
 			);
 			name = Class;
 			sourceTree = "<group>";
@@ -373,6 +378,7 @@
 				846B967E1BB92A1800304088 /* KGAPIRequestManager.m in Sources */,
 				F7D8CF721BAD3D0100228B06 /* KGLoginViewController.m in Sources */,
 				F7D8CF771BAD3D0F00228B06 /* KGRegisterViewController.m in Sources */,
+				84CA75F61BBE7995001737A9 /* KGRootViewController+TabBarTransition.m in Sources */,
 				F7D8CF6C1BAD3AAB00228B06 /* KGRootViewController.m in Sources */,
 				F7D8CF491BAD398D00228B06 /* AppDelegate.m in Sources */,
 				846B96781BB9178100304088 /* KGURLConnectManager.m in Sources */,

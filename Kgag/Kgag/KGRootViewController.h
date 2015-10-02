@@ -10,6 +10,9 @@
 
 @interface KGRootViewController : UIViewController
 
+@property (strong, nonatomic) IBOutlet UITabBar *tabBarView;
+@property (strong, nonatomic) IBOutlet UIButton *tabBarAnimationButton;
+
 - (id)init;
 
 @end
