@@ -6,6 +6,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KGRootViewController">
             <connections>
+                <outlet property="tabBarAnimationButton" destination="UcY-dM-qmd" id="vWK-on-Hiq"/>
+                <outlet property="tabBarView" destination="hQd-T0-fDU" id="7qS-fd-E50"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -23,8 +25,33 @@
                         <action selector="logOutButtonAction:" destination="-1" eventType="touchUpInside" id="U6N-O9-QlI"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UcY-dM-qmd">
+                    <rect key="frame" x="321" y="588" width="46" height="30"/>
+                    <color key="backgroundColor" red="0.4823529412" green="0.0039215686269999999" blue="0.0039215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="Button">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="tabBarViewButton:" destination="-1" eventType="touchUpInside" id="LBe-eo-WOb"/>
+                    </connections>
+                </button>
+                <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hQd-T0-fDU">
+                    <rect key="frame" x="0.0" y="618" width="375" height="49"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <items>
+                        <tabBarItem systemItem="favorites" id="cT2-z1-YYT"/>
+                        <tabBarItem systemItem="more" id="qNt-7R-3Dd"/>
+                    </items>
+                </tabBar>
             </subviews>
             <color key="backgroundColor" red="0.33716045919999998" green="1" blue="0.1284193458" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="hQd-T0-fDU" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="KjU-4x-bQx"/>
+                <constraint firstAttribute="trailing" secondItem="hQd-T0-fDU" secondAttribute="trailing" id="OLF-kC-LSN"/>
+                <constraint firstAttribute="bottom" secondItem="hQd-T0-fDU" secondAttribute="bottom" id="XGI-YA-Qkx"/>
+                <constraint firstAttribute="trailing" secondItem="UcY-dM-qmd" secondAttribute="trailing" constant="8" id="pjB-tS-cyW"/>
+                <constraint firstAttribute="bottom" secondItem="UcY-dM-qmd" secondAttribute="bottom" constant="49" id="xc9-nw-KtP"/>
+            </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
         </view>
     </objects>

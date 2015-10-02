@@ -16,14 +16,14 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="LOGIN PAGE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qu5-Mh-Vp2">
-                    <rect key="frame" x="0.0" y="147" width="375" height="21"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOGIN PAGE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qu5-Mh-Vp2">
+                    <rect key="frame" x="114" y="33" width="147" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CDE-bC-Bop">
-                    <rect key="frame" x="127" y="410" width="121" height="30"/>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CDE-bC-Bop">
+                    <rect key="frame" x="127" y="404" width="121" height="30"/>
                     <state key="normal" title="Login">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
@@ -31,17 +31,7 @@
                         <action selector="loginButtonAction:" destination="-1" eventType="touchUpInside" id="EeN-ew-Kf8"/>
                     </connections>
                 </button>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d69-oS-R9g">
-                    <rect key="frame" x="8" y="307" width="359" height="30"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
-                </textField>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gYu-js-Yie">
-                    <rect key="frame" x="8" y="352" width="359" height="30"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
-                </textField>
-                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qBl-Sv-4Wa">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qBl-Sv-4Wa">
                     <rect key="frame" x="118" y="616" width="139" height="30"/>
                     <state key="normal" title="REGISTER">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -50,17 +40,27 @@
                         <action selector="registerButtonAction:" destination="-1" eventType="touchUpInside" id="cu9-2E-1ZR"/>
                     </connections>
                 </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d69-oS-R9g">
+                    <rect key="frame" x="8" y="169" width="359" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gYu-js-Yie">
+                    <rect key="frame" x="8" y="213" width="359" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
             </subviews>
             <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
-                <constraint firstItem="CDE-bC-Bop" firstAttribute="width" secondItem="qBl-Sv-4Wa" secondAttribute="width" id="9pE-iP-z1m"/>
-                <constraint firstItem="gYu-js-Yie" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="D0a-Cs-FV2"/>
-                <constraint firstAttribute="trailing" secondItem="gYu-js-Yie" secondAttribute="trailing" constant="8" id="dTM-AD-iHk"/>
-                <constraint firstAttribute="centerY" relation="lessThanOrEqual" secondItem="qBl-Sv-4Wa" secondAttribute="centerY" constant="10" id="f5W-xS-OJk"/>
-                <constraint firstAttribute="trailing" secondItem="d69-oS-R9g" secondAttribute="trailing" constant="8" id="fD8-tL-xdW"/>
-                <constraint firstAttribute="centerX" secondItem="qBl-Sv-4Wa" secondAttribute="centerX" id="ow0-mr-7vz"/>
-                <constraint firstItem="d69-oS-R9g" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="rgj-4H-iBV"/>
-                <constraint firstItem="gYu-js-Yie" firstAttribute="width" secondItem="d69-oS-R9g" secondAttribute="width" id="wft-eh-vJ5"/>
+                <constraint firstAttribute="centerX" secondItem="qBl-Sv-4Wa" secondAttribute="centerX" id="0yr-pe-xVP"/>
+                <constraint firstItem="Qu5-Mh-Vp2" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="33" id="LQx-o7-0c9"/>
+                <constraint firstAttribute="trailing" secondItem="Qu5-Mh-Vp2" secondAttribute="trailing" constant="114" id="l6G-na-jTT"/>
+                <constraint firstItem="qBl-Sv-4Wa" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="118" id="lv3-aY-gqR"/>
+                <constraint firstAttribute="bottom" secondItem="qBl-Sv-4Wa" secondAttribute="bottom" constant="21" id="rRA-M9-edS"/>
+                <constraint firstAttribute="centerX" secondItem="Qu5-Mh-Vp2" secondAttribute="centerX" id="tPa-R2-Ph0"/>
+                <constraint firstItem="Qu5-Mh-Vp2" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="114" id="xrH-Qe-ie8"/>
+                <constraint firstAttribute="trailing" secondItem="qBl-Sv-4Wa" secondAttribute="trailing" constant="118" id="yKx-vp-4R0"/>
             </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
         </view>

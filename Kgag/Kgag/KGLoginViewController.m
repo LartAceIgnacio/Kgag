@@ -58,7 +58,12 @@
             [[AppDelegate sharedAppDelegate] setApplicationAccount:[userDictionary objectForKey:@"username"]];
             [[AppDelegate sharedAppDelegate] showHomeViewController];
         } else {
-            NSLog(@"Login Failed");
+            UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Login Failed"
+                                                                message:@"Username or password is incorrect"
+                                                               delegate:nil
+                                                      cancelButtonTitle:@"Ok"
+                                                      otherButtonTitles:nil];
+            [alertView show];
         }
     };
     
