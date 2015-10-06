@@ -12,6 +12,7 @@
 
 @property (strong, nonatomic) IBOutlet UITabBar *tabBarView;
 @property (strong, nonatomic) IBOutlet UIButton *tabBarAnimationButton;
+@property (strong, nonatomic) IBOutlet UIView *pushNavigationView;
 
 - (id)init;
 

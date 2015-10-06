@@ -10,6 +10,7 @@
 #import "AppDelegate.h"
 #import "KGLoginViewController.h"
 #import "KGRootViewController+TabBarTransition.h"
+#import "KGTopViewController.h"
 
 @interface KGRootViewController ()
 
@@ -32,7 +33,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    
+    
 }
 
 - (void)didReceiveMemoryWarning
