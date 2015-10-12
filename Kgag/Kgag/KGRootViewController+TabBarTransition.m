@@ -31,9 +31,9 @@ static const CGFloat kKGTabBarAnimationDuration = 1.0f;
                          tabBarTransitionButtonFrame.origin.y = CGRectGetMinY(tabBarTransitionButtonFrame) - tabBarHeight;
                          self.tabBarAnimationButton.frame = tabBarTransitionButtonFrame;
                          
-                         CGRect pushNavigationViewFrame = self.pushNavigationView.frame;
+                         CGRect pushNavigationViewFrame = self.contentView.frame;
                          pushNavigationViewFrame.size.height -= tabBarHeight;
-                         self.pushNavigationView.frame = pushNavigationViewFrame;
+                         self.contentView.frame = pushNavigationViewFrame;
                      }];
 }
 
@@ -51,9 +51,9 @@ static const CGFloat kKGTabBarAnimationDuration = 1.0f;
                          tabBarTransitionButtonFrame.origin.y = CGRectGetMinY(tabBarTransitionButtonFrame) + tabBarHeight;
                          self.tabBarAnimationButton.frame = tabBarTransitionButtonFrame;
                          
-                         CGRect pushNavigationViewFrame = self.pushNavigationView.frame;
+                         CGRect pushNavigationViewFrame = self.contentView.frame;
                          pushNavigationViewFrame.size.height += tabBarHeight;
-                         self.pushNavigationView.frame = pushNavigationViewFrame;
+                         self.contentView.frame = pushNavigationViewFrame;
                      }];
 }
 

@@ -4,6 +4,7 @@
 target 'Kgag' do
 
 pod 'AFNetworking', '2.5.2'
+pod 'SVPullToRefreshImprove'
 
 end
 

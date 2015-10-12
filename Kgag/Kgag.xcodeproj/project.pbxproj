@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		413549867FDC0B5D0A3D6C5A /* libPods-Kgag.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A3130EFA9B82415BDBBC2A34 /* libPods-Kgag.a */; };
+		84607BEB1BC5051300784340 /* KGGagRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84607BEA1BC5051300784340 /* KGGagRequestManager.m */; settings = {ASSET_TAGS = (); }; };
+		84607BF41BC50CE400784340 /* KGPageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84607BF31BC50CE400784340 /* KGPageManager.m */; settings = {ASSET_TAGS = (); }; };
+		84607BF71BC513D300784340 /* KGGag.m in Sources */ = {isa = PBXBuildFile; fileRef = 84607BF61BC513D300784340 /* KGGag.m */; settings = {ASSET_TAGS = (); }; };
+		84607BFA1BC5156000784340 /* KGTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84607BF91BC5156000784340 /* KGTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		84607C011BC515D300784340 /* KGGagCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84607BFF1BC515D300784340 /* KGGagCell.m */; settings = {ASSET_TAGS = (); }; };
+		84607C021BC515D300784340 /* KGGagCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84607C001BC515D300784340 /* KGGagCell.xib */; settings = {ASSET_TAGS = (); }; };
 		846B96781BB9178100304088 /* KGURLConnectManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 846B96771BB9178100304088 /* KGURLConnectManager.m */; };
 		846B967B1BB929EB00304088 /* KGUserRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 846B967A1BB929EB00304088 /* KGUserRequestManager.m */; };
 		846B967E1BB92A1800304088 /* KGAPIRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 846B967D1BB92A1800304088 /* KGAPIRequestManager.m */; };
@@ -40,6 +46,17 @@
 
 /* Begin PBXFileReference section */
 		1B3888681E75519C89AD0399 /* Pods-Kgag.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kgag.release.xcconfig"; path = "Pods/Target Support Files/Pods-Kgag/Pods-Kgag.release.xcconfig"; sourceTree = "<group>"; };
+		84607BE91BC5051300784340 /* KGGagRequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGGagRequestManager.h; sourceTree = "<group>"; };
+		84607BEA1BC5051300784340 /* KGGagRequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGGagRequestManager.m; sourceTree = "<group>"; };
+		84607BF21BC50CE400784340 /* KGPageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGPageManager.h; sourceTree = "<group>"; };
+		84607BF31BC50CE400784340 /* KGPageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGPageManager.m; sourceTree = "<group>"; };
+		84607BF51BC513D300784340 /* KGGag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGGag.h; sourceTree = "<group>"; };
+		84607BF61BC513D300784340 /* KGGag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGGag.m; sourceTree = "<group>"; };
+		84607BF81BC5156000784340 /* KGTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGTableViewCell.h; sourceTree = "<group>"; };
+		84607BF91BC5156000784340 /* KGTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGTableViewCell.m; sourceTree = "<group>"; };
+		84607BFE1BC515D300784340 /* KGGagCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGGagCell.h; sourceTree = "<group>"; };
+		84607BFF1BC515D300784340 /* KGGagCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGGagCell.m; sourceTree = "<group>"; };
+		84607C001BC515D300784340 /* KGGagCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KGGagCell.xib; sourceTree = "<group>"; };
 		846B96741BB9150200304088 /* KGURLPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGURLPath.h; sourceTree = "<group>"; };
 		846B96761BB9178100304088 /* KGURLConnectManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGURLConnectManager.h; sourceTree = "<group>"; };
 		846B96771BB9178100304088 /* KGURLConnectManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGURLConnectManager.m; sourceTree = "<group>"; };
@@ -118,6 +135,11 @@
 				846BAD511BBA5A06005ADECE /* Models */,
 				F7D8CF6E1BAD3CE400228B06 /* Register */,
 				846BAD561BBA6192005ADECE /* Utilities */,
+				84607BF81BC5156000784340 /* KGTableViewCell.h */,
+				84607BF91BC5156000784340 /* KGTableViewCell.m */,
+				84607BFE1BC515D300784340 /* KGGagCell.h */,
+				84607BFF1BC515D300784340 /* KGGagCell.m */,
+				84607C001BC515D300784340 /* KGGagCell.xib */,
 			);
 			name = Class;
 			sourceTree = "<group>";
@@ -129,6 +151,8 @@
 				846B96771BB9178100304088 /* KGURLConnectManager.m */,
 				846B967C1BB92A1800304088 /* KGAPIRequestManager.h */,
 				846B967D1BB92A1800304088 /* KGAPIRequestManager.m */,
+				84607BF21BC50CE400784340 /* KGPageManager.h */,
+				84607BF31BC50CE400784340 /* KGPageManager.m */,
 			);
 			name = BaseRequestManager;
 			sourceTree = "<group>";
@@ -138,6 +162,8 @@
 			children = (
 				846BAD531BBA5A40005ADECE /* KGUser.h */,
 				846BAD541BBA5A40005ADECE /* KGUser.m */,
+				84607BF51BC513D300784340 /* KGGag.h */,
+				84607BF61BC513D300784340 /* KGGag.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -147,6 +173,8 @@
 			children = (
 				846B96791BB929EB00304088 /* KGUserRequestManager.h */,
 				846B967A1BB929EB00304088 /* KGUserRequestManager.m */,
+				84607BE91BC5051300784340 /* KGGagRequestManager.h */,
+				84607BEA1BC5051300784340 /* KGGagRequestManager.m */,
 			);
 			name = Managers;
 			sourceTree = "<group>";
@@ -329,6 +357,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84A5D14D1BC218FF00AB4C2C /* KGTopViewController.xib in Resources */,
+				84607C021BC515D300784340 /* KGGagCell.xib in Resources */,
 				F7D8CF731BAD3D0100228B06 /* KGLoginViewController.xib in Resources */,
 				F7D8CF541BAD398D00228B06 /* LaunchScreen.xib in Resources */,
 				F7D8CF511BAD398D00228B06 /* Images.xcassets in Resources */,
@@ -384,15 +413,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84607BF41BC50CE400784340 /* KGPageManager.m in Sources */,
 				846B967E1BB92A1800304088 /* KGAPIRequestManager.m in Sources */,
+				84607BEB1BC5051300784340 /* KGGagRequestManager.m in Sources */,
 				F7D8CF721BAD3D0100228B06 /* KGLoginViewController.m in Sources */,
 				F7D8CF771BAD3D0F00228B06 /* KGRegisterViewController.m in Sources */,
 				84CA75F61BBE7995001737A9 /* KGRootViewController+TabBarTransition.m in Sources */,
 				84A5D14C1BC218FF00AB4C2C /* KGTopViewController.m in Sources */,
+				84607C011BC515D300784340 /* KGGagCell.m in Sources */,
+				84607BFA1BC5156000784340 /* KGTableViewCell.m in Sources */,
 				F7D8CF6C1BAD3AAB00228B06 /* KGRootViewController.m in Sources */,
 				F7D8CF491BAD398D00228B06 /* AppDelegate.m in Sources */,
 				846B96781BB9178100304088 /* KGURLConnectManager.m in Sources */,
 				F7D8CF461BAD398D00228B06 /* main.m in Sources */,
+				84607BF71BC513D300784340 /* KGGag.m in Sources */,
 				846BAD551BBA5A40005ADECE /* KGUser.m in Sources */,
 				846B967B1BB929EB00304088 /* KGUserRequestManager.m in Sources */,
 			);
@@ -464,7 +498,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -501,7 +535,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
